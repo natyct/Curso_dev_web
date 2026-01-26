@@ -1,0 +1,67 @@
+1
+
+nota = 10
+
+if float(nota) <= 10:
+    print("verdadeiro")
+else:
+    print("falso")
+
+# resultado verdadeiro    
+
+2
+
+nota = 6
+faltas = 4
+
+if float(nota) <= 6 and float(faltas) <= 3:
+	print("verdadeiro")
+else:
+	print("falso")
+
+# Resultado falso
+
+3
+
+convidados = 3
+fumantes = False 
+
+if float(convidados)>4 or float(fumantes==True):
+	print("verdadeiro")
+else:
+	print("falso")
+
+# Resultado falso
+4
+
+dia="qua"
+
+if str(dia) == "sab" or str(dia) == "dom":
+    print("verdadeiro")
+else:
+    print("falso")
+
+# Resultado falso
+
+5
+
+feriado = True
+
+if not float(feriado == False):
+  print("verdadeiro")
+else:
+  print("falso")
+
+# Resultado verdadeiro
+
+6
+
+dia = "ter"
+feriado = False
+
+if bool(dia == "seg") or not(feriado == False):
+   print("verdadeiro")
+else:
+   print("falso")
+
+# Resultado falso
