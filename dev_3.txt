@@ -1,0 +1,8 @@
+descendo = 20
+descendoDe12 = 12
+
+for descendo in range(20,13,-1):
+  print(descendo)
+  if descendo == 14:
+    for descendoDe12 in range(12,0,-1):
+      print(descendoDe12)
