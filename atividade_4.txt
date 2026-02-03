@@ -1,0 +1,33 @@
+num1 = float(input("Digite o primeiro número: "))
+#opção de digitar o primeiro numero
+num2 = float(input("Digite o segundo número: "))
+#opção de digitar o segundo numero
+operacao_escolhida = int(input("Digite o número da operação (1-Soma, 2-Subtração, 3-Multiplicação, 4-Divisão): "))
+#opção de escolher por numero soma, subtração, multiplicação ou divisão
+resultado = calculadora(num1, num2, operacao_escolhida)
+# Busca o resultado
+
+def calculadora(numero_1, numero_2, operacao):
+  if operacao == 1: 
+    # 1 = Soma
+    return numero_1 + numero_2
+  elif operacao == 2: 
+    # 2 = Subtração
+    return numero_1 - numero_2
+  elif operacao == 3: 
+    # 3 = Multiplicação
+    return numero_1 * numero_2
+  elif operacao == 4:
+    # 4 = Divisão
+    if numero_2 != 0: 
+      # Evitando divisão por zero
+      return numero_1 / numero_2
+    else:
+      return 0 
+      # Retorna 0 se a divisão for por zero
+  else:
+    return 0 
+    # Retorna 0 para operações inválidas
+    
+print(f"O resultado da operação é: {resultado}")
+#imprime o resultado
