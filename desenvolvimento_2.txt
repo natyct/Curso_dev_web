@@ -1,0 +1,19 @@
+rodas = 4
+pessoas = 10
+peso = 30000
+
+if (rodas == 2 or rodas == 3):
+	print("Categoria A")
+
+
+elif(rodas>=4):
+	if pessoas > 8:
+		print("Categoria D")
+	elif peso > 6000:
+		print("Categoria E")
+	elif peso > 3500:
+		print("Categoria C")
+	else:	
+		print("Categoria B")
+
+# Resultado Categoria D
